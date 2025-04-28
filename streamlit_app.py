@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
 # Set page config
 st.set_page_config(page_title="Streamlit YouTube Channel Dashboard", layout="wide")
@@ -33,8 +34,11 @@ for column in ['NET_SUBSCRIBERS', 'VIEWS', 'WATCH_HOURS', 'LIKES']:
 # Set up the dashboard
 st.title("Streamlit YouTube Channel Dashboard")
 
-logo_icon = ""
-logo_image = ""
+logo_icon = Image.open("images/streamlit-mark-color.png")
+logo_image = Image.open("images/streamlit-logo-primary-colormark-lighttext.png")
+
+logo_icon = "images/streamlit-mark-color.png"
+logo_image = "images/streamlit-logo-primary-colormark-lighttext.png"
 st.logo(icon_image=logo_icon, image=logo_image)
 
 # Sidebar

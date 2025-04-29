@@ -1,3 +1,5 @@
+# this file generates a dashboard of youtube stats from youtube_channel_data.csv file on streamlit 
+
 import streamlit as st
 import pandas as pd
 from PIL import Image
